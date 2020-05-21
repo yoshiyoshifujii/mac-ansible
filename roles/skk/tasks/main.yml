@@ -1,0 +1,11 @@
+- block:
+
+  - name: 'link skk jisyo'
+    file:
+      src: '{{ env.home }}/dotfiles/skk-jisyo.utf8'
+      dest: '{{ env.home }}/Library/Application Support/AquaSKK/skk-jisyo.utf8'
+      state: link
+      force: yes
+
+  tags:
+    - skk
