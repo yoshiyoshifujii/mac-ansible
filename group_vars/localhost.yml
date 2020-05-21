@@ -132,6 +132,7 @@ homebrew_cask_packages:
   - name: clover-configurator
   - name: discord
   - name: docker
+  - name: google-chrome
   - name: goland
   - name: intellij-idea
   - name: iterm2
