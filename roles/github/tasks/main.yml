@@ -1,0 +1,17 @@
+- block:
+
+  - name: make dir .ssh
+    shell: mkdir {{ environment.home }}/.ssh
+    creates: {{ environment.home }}/.ssh
+
+  - name: generate ssh key
+    shell: |
+      ssh-keygen \
+        -t rsa \
+        -b 4096 \
+        -C "yoshiyoshifujii@gmail.com" \
+        -N "" \
+        -f {{ environment.home }}/.ssh/id_rsa_github
+    creates: {{ environment.home }}/.ssh/id_rsa_github
+  tags:
+    - github

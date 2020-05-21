@@ -1,3 +1,5 @@
+environment:
+  - home: /tmp/mac-ansible-test
 homebrew_taps:
   - aws/tap
   - caskroom/cask

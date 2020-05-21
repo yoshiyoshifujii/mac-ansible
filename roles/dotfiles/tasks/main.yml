@@ -16,7 +16,8 @@
   - name: checkout dotfiles
     git:
       repo: git@github.com:yoshiyoshifujii/dotfiles.git
-      dest: ~/dotfiles
+      dest: {{ environment.home }}/dotfiles
+      key_file: {{ environment.home }}/.ssh/id_rsa_github.pub
 
   # - name: create symlinks
   #   file:
