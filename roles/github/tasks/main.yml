@@ -29,7 +29,7 @@
   - name: add ssh config
     template:
       src: template.config
-      dest: {{ env.home }}/.ssh/config
+      dest: '{{ env.home }}/.ssh/config'
 
   tags:
     - github
