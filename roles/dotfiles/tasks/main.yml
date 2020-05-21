@@ -1,18 +1,5 @@
 - block:
 
-  ########
-  # copy #
-  ########
-  # - name: copy dotfiles
-  #   template:
-  #     src: template{{ item }}
-  #     dest: ~/{{ item }}
-  #     force: yes
-  #   with_items: '{{ dot_files }}'
-
-  #################
-  # symbolic link #
-  #################
   - name: checkout dotfiles
     git:
       repo: git@github.com:yoshiyoshifujii/dotfiles.git
