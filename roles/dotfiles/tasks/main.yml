@@ -16,8 +16,23 @@
   - name: checkout dotfiles
     git:
       repo: git@github.com:yoshiyoshifujii/dotfiles.git
-      dest: {{ environment.home }}/dotfiles
-      key_file: {{ environment.home }}/.ssh/id_rsa_github.pub
+      dest: '{{ env.home }}/dotfiles'
+      key_file: '{{ env.home }}/.ssh/id_rsa_github'
+
+  - name: install oh-my-zsh
+    shell: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+    args:
+      creates: '~/.oh-my-zsh'
+
+  - name: oh-my-zsh plugin
+    git:
+      repo: https://github.com/zdharma/fast-syntax-highlighting.git
+      dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+
+  - name: oh-my-zsh plugin
+    git:
+      repo: https://github.com/zsh-users/zsh-autosuggestions
+      dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
   # - name: create symlinks
   #   file:
