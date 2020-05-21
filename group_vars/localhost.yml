@@ -1,5 +1,5 @@
 env:
-  home: "/tmp/mac-ansible-test"
+  home: "~"
 github:
   key_name: "yoshiyoshifujii@{{ base_name }}"
 homebrew_taps:
