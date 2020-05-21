@@ -3,14 +3,12 @@ env:
 github:
   key_name: "yoshiyoshifujii@{{ base_name }}"
 homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
   - aws/tap
-  - caskroom/cask
-  - chatwork/chatwork
   - derailed/k9s
   - github/gh
   - homebrew/bundle
-  - homebrew/cask
-  - homebrew/core
   - weaveworks/tap
 homebrew_packages:
   - name: adns
@@ -102,12 +100,9 @@ homebrew_packages:
   - name: pixman
   - name: pkg-config
   - name: protobuf
-  - name: protobuf@3.7
   - name: pyenv
   - name: pyenv-virtualenv
   - name: python
-  - name: python@2
-  - name: python@3.8
   - name: rancher-cli
   - name: readline
   - name: ruby
@@ -116,7 +111,6 @@ homebrew_packages:
   - name: scala
   - name: sqlite
   - name: stern
-  - name: tadpole
   - name: telnet
   - name: terraform
   - name: tmux
@@ -131,28 +125,18 @@ homebrew_packages:
 homebrew_cask_packages:
   - name: adobe-acrobat-reader
   - name: alfred
-  - name: amazon-music
   - name: aquaskk
-  - name: arduino
-  - name: astah-professional
   - name: bettertouchtool
-  - name: chatwork
   - name: chromedriver
   - name: clipy
   - name: clover-configurator
   - name: discord
   - name: docker
-  - name: edrawmax
-  - name: forticlient
-  - name: freemind
-  - name: gimp
   - name: goland
   - name: intellij-idea
   - name: iterm2
   - name: karabiner-elements
-  - name: krisp
   - name: macvim
-  - name: notion
   - name: phpstorm
   - name: sequel-pro
   - name: slack
