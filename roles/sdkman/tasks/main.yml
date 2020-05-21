@@ -1,0 +1,10 @@
+- block:
+
+  - name: 'install sdkman'
+    shell: |
+      curl -s "https://get.sdkman.io" | bash
+    args:
+      creates: '{{ env.home }}/.sdkman'
+
+  tags:
+    - sdkman
