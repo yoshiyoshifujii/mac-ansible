@@ -72,7 +72,7 @@
   - name: '.tmux'
     git:
       repo: https://github.com/gpakosz/.tmux.git
-      dest: '{{ env.home }}'
+      dest: '{{ env.home }}/.tmux'
 
   - name: '.tmux create symlink'
     file:
