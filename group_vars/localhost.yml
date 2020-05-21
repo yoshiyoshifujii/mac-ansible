@@ -1,0 +1,30 @@
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
+homebrew_packages:
+  - name: ansible
+  - name: awscli
+  - name: bash-completion
+  - name: docker
+  - name: git
+  - name: tree
+  - name: vim
+  - name: wget
+homebrew_cask_packages:
+  - name: appcleaner
+  - name: cyberduck
+  - name: docker
+  - name: google-chrome
+  - name: google-cloud-sdk
+  - name: google-japanese-ime
+  - name: skitch
+  - name: slack
+  - name: startninja
+  - name: station
+  - name: visual-studio-code
+dot_files:
+  - .bash_profile
+  - .bashrc
+  - .vimrc
+code_extensions:
+  - vscode-icons-team.vscode-icons
