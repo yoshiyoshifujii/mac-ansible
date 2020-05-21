@@ -123,6 +123,7 @@ homebrew_packages:
   - name: zsh
   - name: zsh-completions
 homebrew_cask_packages:
+  - name: 1password
   - name: adobe-acrobat-reader
   - name: alfred
   - name: aquaskk
