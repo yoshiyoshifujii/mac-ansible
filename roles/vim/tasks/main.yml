@@ -1,0 +1,29 @@
+- block:
+
+  - name: 'link .vimrc'
+    file:
+      src: '{{ env.home }}/dotfiles/.vimrc'
+      dest: '{{ env.home }}/.vimrc'
+      state: link
+      force: yes
+
+  - name: 'link .vim'
+    file:
+      src: '{{ env.home }}/dotfiles/.vim'
+      dest: '{{ env.home }}/.vim'
+      state: link
+      force: yes
+
+  - name: make dir bundle
+    shell: |
+      mkdir {{ env.home }}/.vim/bundle
+    args:
+      creates: '{{ env.home }}/.vim/bundle'
+
+  - name: clone vundle
+    git:
+      repo: https://github.com/gmarik/vundle.git
+      dest: '{{ env.home }}/.vim/bundle/vundle'
+
+  tags:
+    - vim
