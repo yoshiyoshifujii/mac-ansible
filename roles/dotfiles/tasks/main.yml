@@ -65,7 +65,7 @@
       cd {{ env.home }}/.fonts
       ./install.sh
     args:
-      creates: {{ env.home }}/.fonts
+      creates: '{{ env.home }}/.fonts'
 
   - name: '.tmux'
     git:
