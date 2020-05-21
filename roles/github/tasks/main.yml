@@ -1,8 +1,9 @@
 - block:
 
-  - name: make dir .ssh
-    shell: mkdir {{ environment.home }}/.ssh
-    creates: {{ environment.home }}/.ssh
+  - name: 'make dir .ssh'
+    shell: 'mkdir -p {{ env.home }}/.ssh'
+    args:
+      creates: '{{ env.home }}/.ssh'
 
   - name: generate ssh key
     shell: |
@@ -11,7 +12,19 @@
         -b 4096 \
         -C "yoshiyoshifujii@gmail.com" \
         -N "" \
-        -f {{ environment.home }}/.ssh/id_rsa_github
-    creates: {{ environment.home }}/.ssh/id_rsa_github
+        -f {{ env.home }}/.ssh/id_rsa_github
+    args:
+      creates: '{{ env.home }}/.ssh/id_rsa_github'
+
+  - name: Read SSH public key to authorize
+    shell: 'cat {{ env.home }}/.ssh/id_rsa_github.pub'
+    register: ssh_pub_key
+
+  - name: Authorize key with GitHub
+    github_key:
+      name: '{{ github.key_name }}'
+      token: '{{ github_access_token }}'
+      pubkey: '{{ ssh_pub_key.stdout }}'
+
   tags:
     - github

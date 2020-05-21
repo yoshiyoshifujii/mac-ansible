@@ -1,5 +1,7 @@
-environment:
-  - home: /tmp/mac-ansible-test
+env:
+  home: "/tmp/mac-ansible-test"
+github:
+  key_name: "yoshiyoshifujii@{{ base_name }}"
 homebrew_taps:
   - aws/tap
   - caskroom/cask
