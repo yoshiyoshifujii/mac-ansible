@@ -58,13 +58,14 @@
     git:
       repo: https://github.com/powerline/fonts.git
       depth: 1
+      dest: '{{ env.home }}/fonts'
 
   - name: powerline font install
     shell: |
-      cd fonts
+      cd {{ env.home }}/fonts
       ./install.sh
       cd ..
-      rm -rf fonts
+      rm -rf {{ env.home }}/fonts
     args:
       creates: fonts
 
