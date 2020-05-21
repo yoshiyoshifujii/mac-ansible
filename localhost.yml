@@ -6,4 +6,5 @@
     - homebrew
     - homebrew_cask
     - github
+    - git
     - dotfiles

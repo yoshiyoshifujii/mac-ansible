@@ -1,0 +1,16 @@
+- block:
+
+  - name: 'add git config global user.name'
+    git_config:
+      name: user.name
+      scope: global
+      value: '{{ git.user.name }}'
+
+  - name: 'add git config global user.email'
+    git_config:
+      name: user.name
+      scope: global
+      value: '{{ git.user.email }}'
+
+  tags:
+    - git
