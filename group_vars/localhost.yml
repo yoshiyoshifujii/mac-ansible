@@ -133,6 +133,7 @@ homebrew_cask_packages:
   - name: clover-configurator
   - name: discord
   - name: docker
+  - name: dropbox
   - name: google-chrome
   - name: goland
   - name: intellij-idea
