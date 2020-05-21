@@ -1,0 +1,10 @@
+- block:
+
+  - name: 'install jabba'
+    shell: |
+      curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | bash && . {{ env.home }}/.jabba/jabba.sh
+    args:
+      creates: '{{ env.home }}/.jabba'
+
+  tags:
+    - jabba

@@ -21,4 +21,4 @@ git clone https://github.com/yoshiyoshifujii/mac-ansible.git ${ANSIBLE_PATH}
 
 ## ansible
 cd ${ANSIBLE_PATH}
-ansible-playbook -i inventory/localhost localhost.yml --extra-vars "github_access_token=${GITHUB_ACCESS_TOKEN}"
+ansible-playbook -i inventory/localhost localhost.yml --extra-vars 'github_access_token=${GITHUB_ACCESS_TOKEN} base_name=${BASE_NAME} git_user_name="${GIT_USER_NAME}" git_user_email=${GIT_USER_EMAIL}'
