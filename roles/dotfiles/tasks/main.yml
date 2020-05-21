@@ -3,20 +3,20 @@
   ########
   # copy #
   ########
-  - name: copy dotfiles
-    template:
-      src: template{{ item }}
-      dest: ~/{{ item }}
-      force: yes
-    with_items: '{{ dot_files }}'
+  # - name: copy dotfiles
+  #   template:
+  #     src: template{{ item }}
+  #     dest: ~/{{ item }}
+  #     force: yes
+  #   with_items: '{{ dot_files }}'
 
   #################
   # symbolic link #
   #################
-  # - name: checkout dotfiles
-  #   git:
-  #     repo: https://github.com/{your_repository}/dotfiles.git
-  #     dest: ~/dotfiles
+  - name: checkout dotfiles
+    git:
+      repo: git@github.com:yoshiyoshifujii/dotfiles.git
+      dest: ~/dotfiles
 
   # - name: create symlinks
   #   file:

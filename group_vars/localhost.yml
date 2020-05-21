@@ -1,30 +1,162 @@
 homebrew_taps:
+  - aws/tap
+  - caskroom/cask
+  - chatwork/chatwork
+  - derailed/k9s
+  - github/gh
+  - homebrew/bundle
   - homebrew/cask
   - homebrew/core
+  - weaveworks/tap
 homebrew_packages:
+  - name: adns
+  - name: adr-tools
   - name: ansible
+  - name: autoconf
+  - name: automake
+  - name: aws-iam-authenticator
+  - name: aws-sam-cli
   - name: awscli
-  - name: bash-completion
-  - name: docker
+  - name: bat
+  - name: c-ares
+  - name: cairo
+  - name: curl
+  - name: docker-machine
+  - name: docker-machine-driver-xhyve
+  - name: dvm
+  - name: eksctl
+  - name: fontconfig
+  - name: freetype
+  - name: fribidi
+  - name: fx
+  - name: gd
+  - name: gdbm
+  - name: gettext
+  - name: gflags
+  - name: gh
   - name: git
-  - name: tree
-  - name: vim
+  - name: glib
+  - name: gmp
+  - name: gnupg
+  - name: gnutls
+  - name: go
+  - name: gradle
+  - name: graphite2
+  - name: graphviz
+  - name: grpc
+  - name: grpcurl
+  - name: gts
+  - name: harfbuzz
+  - name: helm
+  - name: helmfile
+  - name: httpie
+  - name: hub
+  - name: icu4c
+  - name: jasper
+  - name: jpeg
+  - name: jq
+  - name: k9s
+  - name: kubectx
+  - name: kubernetes-cli
+  - name: kubernetes-helm
+  - name: libassuan
+  - name: libev
+  - name: libevent
+  - name: libffi
+  - name: libgcrypt
+  - name: libgpg-error
+  - name: libidn2
+  - name: libksba
+  - name: libpng
+  - name: libtasn1
+  - name: libtiff
+  - name: libtool
+  - name: libunistring
+  - name: libusb
+  - name: libusb-compat
+  - name: libyaml
+  - name: lzo
+  - name: maven
+  - name: mercurial
+  - name: mysql
+  - name: ncurses
+  - name: netpbm
+  - name: nettle
+  - name: nkf
+  - name: node
+  - name: npth
+  - name: nvm
+  - name: oniguruma
+  - name: openjdk
+  - name: openssl
+  - name: openssl@1.1
+  - name: p11-kit
+  - name: pango
+  - name: pcre
+  - name: pcre2
+  - name: pinentry
+  - name: pixman
+  - name: pkg-config
+  - name: protobuf
+  - name: protobuf@3.7
+  - name: pyenv
+  - name: pyenv-virtualenv
+  - name: python
+  - name: python@2
+  - name: python@3.8
+  - name: rancher-cli
+  - name: readline
+  - name: ruby
+  - name: rustup-init
+  - name: sbt
+  - name: scala
+  - name: sqlite
+  - name: stern
+  - name: tadpole
+  - name: telnet
+  - name: terraform
+  - name: tmux
+  - name: unbound
+  - name: utf8proc
+  - name: watch
+  - name: webp
   - name: wget
+  - name: xz
+  - name: zsh
+  - name: zsh-completions
 homebrew_cask_packages:
-  - name: appcleaner
-  - name: cyberduck
+  - name: adobe-acrobat-reader
+  - name: alfred
+  - name: amazon-music
+  - name: aquaskk
+  - name: arduino
+  - name: astah-professional
+  - name: bettertouchtool
+  - name: chatwork
+  - name: chromedriver
+  - name: clipy
+  - name: clover-configurator
+  - name: discord
   - name: docker
-  - name: google-chrome
-  - name: google-cloud-sdk
-  - name: google-japanese-ime
-  - name: skitch
+  - name: edrawmax
+  - name: forticlient
+  - name: freemind
+  - name: gimp
+  - name: goland
+  - name: intellij-idea
+  - name: iterm2
+  - name: karabiner-elements
+  - name: krisp
+  - name: macvim
+  - name: notion
+  - name: phpstorm
+  - name: sequel-pro
   - name: slack
-  - name: startninja
-  - name: station
+  - name: turbo-boost-switcher
+  - name: vagrant
+  - name: virtualbox
   - name: visual-studio-code
 dot_files:
   - .bash_profile
   - .bashrc
   - .vimrc
-code_extensions:
-  - vscode-icons-team.vscode-icons
