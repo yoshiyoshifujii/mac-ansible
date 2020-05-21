@@ -24,23 +24,71 @@
     args:
       creates: '~/.oh-my-zsh'
 
-  - name: oh-my-zsh plugin
+  - name: oh-my-zsh custom plugin fast-syntax-highlighting
     git:
       repo: https://github.com/zdharma/fast-syntax-highlighting.git
-      dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+      dest: ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 
-  - name: oh-my-zsh plugin
+  - name: oh-my-zsh custom plugin zsh-autosuggestions
     git:
       repo: https://github.com/zsh-users/zsh-autosuggestions
-      dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+      dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-  # - name: create symlinks
-  #   file:
-  #     src: ~/dotfiles/{{ item }}
-  #     dest: ~/{{ item }}
-  #     state: link
-  #     force: yes
-  #   with_items: '{{ dot_files }}'
+  - name: oh-my-zsh custom plugin powerlevel10k
+    git:
+      repo: https://github.com/romkatv/powerlevel10k.git
+      dest: ~/.oh-my-zsh/custom/themes/powerlevel10k
+      depth: 1
+
+  - name: oh-my-zsh custom plugin origin
+    file:
+      src: '{{ env.home }}/dotfiles/origin'
+      dest: ~/.oh-my-zsh/custom/plugins/origin
+      state: link
+      force: yes
+
+  - name: oh-my-zsh custom plugin origin
+    file:
+      src: '{{ env.home }}/dotfiles/zsh-history-beginning-search'
+      dest: ~/.oh-my-zsh/custom/plugins/zsh-history-beginning-search
+      state: link
+      force: yes
+
+  - name: powerline font
+    git:
+      repo: https://github.com/powerline/fonts.git
+      depth: 1
+
+  - name: powerline font install
+    shell: |
+      cd fonts
+      ./install.sh
+      cd ..
+      rm -rf fonts
+    args:
+      creates: fonts
+
+  - name: '.tmux'
+    git:
+      repo: https://github.com/gpakosz/.tmux.git
+      dest: '{{ env.home }}'
+
+  - name: '.tmux create symlink'
+    file:
+      src: '{{ env.home }}/.tmux/.tmux.conf'
+      dest: '{{ env.home }}/.tmux.conf'
+      state: link
+      force: yes
+
+  - name: '.tmux create symlink local'
+    file:
+      src: '{{ env.home }}/dotfiles/.tmux.conf.local'
+      dest: '{{ env.home }}/.tmux.conf.local'
+      state: link
+      force: yes
+
+  - name: 'chsh zsh'
+    shell: 'chsh -s /bin/zsh'
 
   tags:
     - dotfiles
