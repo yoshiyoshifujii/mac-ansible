@@ -1,0 +1,10 @@
+- block:
+
+  - name: 'clone iterm2 color schemees'
+    git:
+      repo: https://github.com/mbadolato/iTerm2-Color-Schemes.git
+      depth: 1
+      dest: '{{ env.home }}/workspace/iTerm2-Color-Schemes'
+
+  tags:
+    - iterm
