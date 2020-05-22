@@ -12,5 +12,11 @@
       scope: global
       value: '{{ git_user_email }}'
 
+  - name: 'change editor vim'
+    git_config:
+      name: core.editor
+      scope: global
+      value: 'vim -c "set fenc=utf-8"'
+
   tags:
     - git
