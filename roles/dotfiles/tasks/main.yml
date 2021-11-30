@@ -13,7 +13,7 @@
 
   - name: oh-my-zsh custom plugin fast-syntax-highlighting
     git:
-      repo: https://github.com/zdharma/fast-syntax-highlighting.git
+      repo: https://github.com/zdharma-continuum/fast-syntax-highlighting.git
       dest: ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 
   - name: oh-my-zsh custom plugin zsh-autosuggestions
