@@ -24,7 +24,6 @@ homebrew_packages:
   - name: cairo
   - name: curl
   - name: docker-machine
-  - name: docker-machine-driver-xhyve
   - name: dvm
   - name: eksctl
   - name: fontconfig
@@ -124,7 +123,6 @@ homebrew_packages:
   - name: zsh-completions
 homebrew_cask_packages:
   - name: 1password
-  - name: adobe-acrobat-reader
   - name: alfred
   - name: aquaskk
   - name: bettertouchtool
@@ -144,8 +142,6 @@ homebrew_cask_packages:
   - name: sequel-pro
   - name: slack
   - name: turbo-boost-switcher
-  - name: vagrant
-  - name: virtualbox
   - name: visual-studio-code
 dot_files:
   - .bash_profile
