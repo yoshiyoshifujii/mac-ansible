@@ -10,20 +10,29 @@ homebrew_taps:
   - github/gh
   - homebrew/bundle
   - weaveworks/tap
+  - virtuslab/scala-cli
 homebrew_packages:
+  - name: abseil
   - name: adns
   - name: adr-tools
   - name: ansible
+  - name: aom
   - name: autoconf
   - name: automake
   - name: aws-iam-authenticator
   - name: aws-sam-cli
   - name: awscli
   - name: bat
+  - name: bdw-gc
+  - name: brotli
   - name: c-ares
+  - name: ca-certificates
   - name: cairo
+  - name: cffi
+  - name: coreutils
   - name: curl
   - name: docker-machine
+  - name: docutils
   - name: dvm
   - name: eksctl
   - name: fontconfig
@@ -32,9 +41,12 @@ homebrew_packages:
   - name: fx
   - name: gd
   - name: gdbm
+  - name: gdk-pixbuf
   - name: gettext
   - name: gflags
   - name: gh
+  - name: ghostscript
+  - name: giflib
   - name: git
   - name: glib
   - name: gmp
@@ -44,41 +56,69 @@ homebrew_packages:
   - name: gradle
   - name: graphite2
   - name: graphviz
+  - name: groff
   - name: grpc
   - name: grpcurl
   - name: gts
+  - name: guile
   - name: harfbuzz
   - name: helm
   - name: helmfile
+  - name: highway
   - name: httpie
   - name: hub
   - name: icu4c
+  - name: imath
   - name: jasper
+  - name: jbig2dec
   - name: jpeg
+  - name: jpeg-turbo
+  - name: jpeg-xl
   - name: jq
+  - name: k6
   - name: k9s
   - name: kubectx
   - name: kubernetes-cli
-  - name: kubernetes-helm
   - name: libassuan
+  - name: libavif
+  - name: libcbor
   - name: libev
   - name: libevent
   - name: libffi
+  - name: libfido2
   - name: libgcrypt
   - name: libgpg-error
+  - name: libidn
   - name: libidn2
   - name: libksba
+  - name: libnghttp2
+  - name: libpaper
   - name: libpng
+  - name: libpthread-stubs
+  - name: librsvg
+  - name: libssh2
   - name: libtasn1
   - name: libtiff
   - name: libtool
   - name: libunistring
   - name: libusb
   - name: libusb-compat
+  - name: libuv
+  - name: libvmaf
+  - name: libx11
+  - name: libxau
+  - name: libxcb
+  - name: libxdmcp
+  - name: libxext
+  - name: libxrender
   - name: libyaml
+  - name: little-cms2
+  - name: lz4
   - name: lzo
+  - name: m4
   - name: maven
   - name: mercurial
+  - name: mpdecimal
   - name: mysql
   - name: ncurses
   - name: netpbm
@@ -88,9 +128,13 @@ homebrew_packages:
   - name: npth
   - name: nvm
   - name: oniguruma
+  - name: openexr
   - name: openjdk
-  - name: openssl
+  - name: openjdk@17
+  - name: openjpeg
+  - name: openldap
   - name: openssl@1.1
+  - name: openssl@3
   - name: p11-kit
   - name: pango
   - name: pcre
@@ -99,50 +143,75 @@ homebrew_packages:
   - name: pixman
   - name: pkg-config
   - name: protobuf
+  - name: psutils
+  - name: pycparser
   - name: pyenv
   - name: pyenv-virtualenv
-  - name: python
+  - name: pygments
+  - name: python@3.10
+  - name: python@3.11
+  - name: python@3.8
+  - name: pyyaml
   - name: rancher-cli
+  - name: re2
   - name: readline
+  - name: rtmpdump
   - name: ruby
   - name: rustup-init
   - name: sbt
   - name: scala
+  - name: scala-cli
+  - name: sccache
+  - name: six
   - name: sqlite
   - name: stern
+  - name: tcl-tk
   - name: telnet
   - name: terraform
   - name: tmux
+  - name: uchardet
   - name: unbound
   - name: utf8proc
   - name: watch
   - name: webp
   - name: wget
+  - name: xorgproto
   - name: xz
+  - name: zlib
   - name: zsh
   - name: zsh-completions
+  - name: zstd
 homebrew_cask_packages:
   - name: 1password
   - name: alfred
   - name: aquaskk
+  - name: aws-vpn-client
   - name: bettertouchtool
   - name: chromedriver
   - name: clipy
   - name: clover-configurator
+  - name: deepl
   - name: discord
   - name: docker
   - name: dropbox
-  - name: google-chrome
+  - name: firefox
+  - name: gather
   - name: goland
+  - name: google-chrome
   - name: intellij-idea
   - name: iterm2
   - name: karabiner-elements
+  - name: kindle
   - name: macvim
+  - name: microsoft-teams
+  - name: miro
   - name: phpstorm
   - name: sequel-pro
   - name: slack
+  - name: steam
   - name: turbo-boost-switcher
   - name: visual-studio-code
+  - name: zoom
 dot_files:
   - .bash_profile
   - .bashrc
