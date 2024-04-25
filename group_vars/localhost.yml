@@ -3,8 +3,6 @@ env:
 github:
   key_name: "yoshiyoshifujii@{{ base_name }}"
 homebrew_taps:
-  - homebrew/cask
-  - homebrew/core
   - aws/tap
   - derailed/k9s
   - github/gh
@@ -65,11 +63,9 @@ homebrew_packages:
   - name: helm
   - name: helmfile
   - name: highway
-  - name: httpie
   - name: hub
   - name: icu4c
   - name: imath
-  - name: jasper
   - name: jbig2dec
   - name: jpeg
   - name: jpeg-turbo
