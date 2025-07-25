@@ -6,7 +6,6 @@ homebrew_taps:
   - aws/tap
   - derailed/k9s
   - github/gh
-  - homebrew/bundle
   - weaveworks/tap
   - virtuslab/scala-cli
 homebrew_packages:
@@ -129,7 +128,6 @@ homebrew_packages:
   - name: openjdk@17
   - name: openjpeg
   - name: openldap
-  - name: openssl@1.1
   - name: openssl@3
   - name: p11-kit
   - name: pango
@@ -146,14 +144,11 @@ homebrew_packages:
   - name: pygments
   - name: python@3.10
   - name: python@3.11
-  - name: python@3.8
-  - name: pyyaml
   - name: rancher-cli
   - name: re2
   - name: readline
   - name: rtmpdump
   - name: ruby
-  - name: rustup-init
   - name: sbt
   - name: scala
   - name: scala-cli
@@ -181,11 +176,9 @@ homebrew_cask_packages:
   - name: 1password
   - name: alfred
   - name: aquaskk
-  - name: aws-vpn-client
   - name: bettertouchtool
   - name: chromedriver
   - name: clipy
-  - name: clover-configurator
   - name: deepl
   - name: discord
   - name: docker
@@ -197,15 +190,12 @@ homebrew_cask_packages:
   - name: intellij-idea
   - name: iterm2
   - name: karabiner-elements
-  - name: kindle
   - name: macvim
   - name: microsoft-teams
   - name: miro
   - name: phpstorm
-  - name: sequel-pro
   - name: slack
   - name: steam
-  - name: turbo-boost-switcher
   - name: visual-studio-code
   - name: zoom
 dot_files:
